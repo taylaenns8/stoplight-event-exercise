@@ -4,6 +4,12 @@ let stop = document.getElementById("stopButton").textContent;
 
 stopButton.addEventListener("click", function () {
   stopLight.classList.toggle("stop");
+
+  if (stopLight.classList.contains("stop")) {
+    console.log(`${stop} bulb on`);
+  } else {
+    console.log(`${stop} bulb off`);
+  }
 });
 
 stopButton.addEventListener("mouseenter", function () {
@@ -20,6 +26,12 @@ let slow = document.getElementById("slowButton").textContent;
 
 slowButton.addEventListener("click", function () {
   slowLight.classList.toggle("slow");
+  
+  if (slowLight.classList.contains("slow")) {
+    console.log(`${slow} bulb on`);
+  } else {
+    console.log(`${slow} bulb off`);
+  }
 });
 
 slowButton.addEventListener("mouseenter", function () {
@@ -38,6 +50,12 @@ let go = document.getElementById("goButton").textContent;
 
 goButton.addEventListener("click", function () {
   goLight.classList.toggle("go");
+
+  if (goLight.classList.contains("go")) {
+    console.log(`${go} bulb on`);
+  } else {
+    console.log(`${go} bulb off`);
+  }
 });
 
 goButton.addEventListener("mouseenter", function () {
